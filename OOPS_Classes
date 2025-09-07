@@ -20,3 +20,49 @@ public class OOPS{
            s1.display();
      }
 }
+
+📝 Practice Questions:
+
+Ek class Student banao jisme name, age aur ek method display() ho jo student ka data print kare.
+
+Ek class Book banao jisme title, author, aur ek method printDetails() ho.
+
+Ek class Calculator banao jisme do numbers ke liye methods ho: add(), subtract(), multiply(), divide().
+
+📍 Step 2: Constructor
+Constructor kya hota hai?
+
+👉 Special method jo automatically call hota hai jab object banate ho.
+
+Naam same hota hai class ke naam jaisa.
+
+Return type nahi hota.
+
+Mainly object initialize karne ke liye use hota hai.
+
+Example:
+class Student {
+    String name;
+    int age;
+
+    // Constructor
+    Student(String n, int a) {
+        name = n;
+        age = a;
+    }
+
+    void display() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+
+public class OOPS {
+    public static void main(String[] args) {
+        Student s1 = new Student("Rahul", 20);
+        Student s2 = new Student("Anjali", 22);
+
+        s1.display();
+        s2.display();
+    }
+}
+
